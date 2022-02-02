@@ -1,6 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
+import OrderImages from './OrderImages';
+import OrderNameInput from './OrderNameInput';
+import InstructionsForm from './InstructionsForm';
+import InstructionsList from './InstructionsList';
 
 function App() {
   // App() : tracks state for foodId, sideId, drinkId, instructions, and orderName
@@ -14,7 +18,10 @@ function App() {
     'eat slowly for taste',
   ]);
 
-  return <div className="App"></div>;
+  return <div className="App">
+    {/* App() : passes state as props correctly to OrderNameInput and OrderImages, InstructionsForm, InstructionsList */}
+
+  </div>;
 }
 
 export default App;
