@@ -11,7 +11,7 @@ function App() {
   const [foodID, setFoodID] = useState(1);
   const [sideID, setSideID] = useState(1);
   const [drinkID, setDrinkID] = useState(1);
-  const [orderName, setOrderName] = useState('');
+  const [orderName, setOrderName] = useState('Average City');
   const [instructions, setInstructions] = useState([
     'cook at 365° F',
     'make sure the food cools for 10 min',
@@ -20,6 +20,7 @@ function App() {
 
   return <div className="App">
     {/* App() : passes state as props correctly to OrderNameInput and OrderImages, InstructionsForm, InstructionsList */}
+    <h1>{orderName}</h1>
     <OrderImages foodID={foodID} sideID={sideID} drinkID={drinkID} />
   </div>;
 }
