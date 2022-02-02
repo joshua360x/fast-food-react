@@ -15,7 +15,7 @@ function App() {
   const [foodID, setFoodID] = useState(1);
   const [sideID, setSideID] = useState(1);
   const [drinkID, setDrinkID] = useState(1);
-  const [orderName, setOrderName] = useState('Average City');
+  const [orderName, setOrderName] = useState('Average Order');
   const [instructions, setInstructions] = useState([
     'cook at 365° F',
     'make sure the food cools for 10 min',
@@ -29,6 +29,7 @@ function App() {
     <FoodDropdown setFoodID={setFoodID} />
     <SideDropdown setSideID={setSideID} />
     <DrinkDropdown setDrinkID={setDrinkID} />
+    <OrderNameInput setOrderName={setOrderName} />
     <InstructionsForm />
     <InstructionsList instructions={instructions} />
   </div>;
