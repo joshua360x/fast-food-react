@@ -20,7 +20,7 @@ function App() {
 
   return <div className="App">
     {/* App() : passes state as props correctly to OrderNameInput and OrderImages, InstructionsForm, InstructionsList */}
-
+    <OrderImages foodID={foodID} sideID={sideID} drinkID={drinkID} />
   </div>;
 }
 
