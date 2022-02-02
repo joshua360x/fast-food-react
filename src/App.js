@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
 import OrderImages from './OrderImages';
@@ -30,7 +30,7 @@ function App() {
     <SideDropdown setSideID={setSideID} />
     <DrinkDropdown setDrinkID={setDrinkID} />
     <OrderNameInput setOrderName={setOrderName} />
-    <InstructionsForm />
+    <InstructionsForm instructions={instructions} setInstructions={setInstructions} />
     <InstructionsList instructions={instructions} />
   </div>;
 }
