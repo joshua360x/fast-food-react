@@ -6,6 +6,10 @@ import OrderNameInput from './OrderNameInput';
 import InstructionsForm from './InstructionsForm';
 import InstructionsList from './InstructionsList';
 
+import FoodDropdown from './Dropdowns/FoodDropdown';
+import SideDropdown from './Dropdowns/SideDropdown';
+import DrinkDropdown from './Dropdowns/DrinkDropdown';
+
 function App() {
   // App() : tracks state for foodId, sideId, drinkId, instructions, and orderName
   const [foodID, setFoodID] = useState(1);
@@ -22,6 +26,9 @@ function App() {
     {/* App() : passes state as props correctly to OrderNameInput and OrderImages, InstructionsForm, InstructionsList */}
     <h1>{orderName}</h1>
     <OrderImages foodID={foodID} sideID={sideID} drinkID={drinkID} />
+    <FoodDropdown setFoodID={setFoodID} />
+    <SideDropdown setSideID={setSideID} />
+    <DrinkDropdown setDrinkID={setDrinkID} />
   </div>;
 }
 
